@@ -1,0 +1,4 @@
+applications:
+  - name: delta-1-hackathon
+    random-route: true
+    memory: 128M
