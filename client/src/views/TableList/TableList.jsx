@@ -46,22 +46,22 @@ function TableList(props) {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Simple Table</h4>
+            <h4 className={classes.cardTitleWhite}>Stock #1</h4>
             <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
+              The items that are absent are marked red
             </p>
           </CardHeader>
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
+              tableHead={["ID", "Name", "Type", "Quantity", "Status"]}
               tableData={[
-                ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                ["1928479228","Heckler & Koch G36", "Gun", "100", "Available"],
+                ["1958673923", "Meal, Ready-to-Eat", "Food", "36", "Unavailable"],
+                ["1947563748", "M577 Armored Command Vehicle", "Vehicles", "3", "Unavailable"],
+                ["1950939583", "5.56x45mm NATO Ammunition", "Ammunition", "864", "Available"],
+                ["1940582857", "122mm Haubica 2A18", "Ammunition", "4", "Available"],
+                ["1947538593", "Unimog U5000 All-Wheel Drive Truck", "Vehicles", "14", "Available"]
               ]}
             />
           </CardBody>
