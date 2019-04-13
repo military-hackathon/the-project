@@ -33,3 +33,5 @@ yarn-debug.log*
 yarn-error.log*
 local.env
 ./local.env
+*.env
+.idea
