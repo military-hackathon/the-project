@@ -45,6 +45,14 @@ class Dashboard extends React.Component {
     state = {
         value: 0
     };
+
+    componentDidMount() {
+      console.log("Making request to endpoint");
+      fetch('http://localhost:8081/queryAllItems')
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(err => console.log(err));
+    }
     handleChange = (event, value) => {
         this.setState({value});
     };

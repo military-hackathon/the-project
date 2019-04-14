@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
@@ -39,8 +39,14 @@ const styles = {
   }
 };
 
-function TableList(props) {
-  const { classes } = props;
+class TableList extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    const { classes } = this.props;
   return (
     <GridContainer>
       <GridItem xs={12} sm={12} md={12}>
@@ -92,6 +98,8 @@ function TableList(props) {
       </GridItem>
     </GridContainer>
   );
+  }
+  
 }
 
 export default withStyles(styles)(TableList);

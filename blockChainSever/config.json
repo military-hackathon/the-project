@@ -1,0 +1,12 @@
+{
+    "connection_file": "connection1.json",
+    "appAdmin": "app-admin3",
+    "appAdminSecret": "app-admin3pw",
+    "orgMSPID": "org1msp",
+    "caName": "184.172.233.55:32687",
+    "userName": "user1",
+    "gatewayDiscovery": {
+        "enabled": true,
+        "asLocalhost": false
+    }
+}
