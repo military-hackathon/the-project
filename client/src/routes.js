@@ -18,80 +18,90 @@ import TableList from "views/TableList/TableList.jsx";
 // import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
 // core components/views for RTL layout
 // import RTLPage from "views/RTLPage/RTLPage.jsx";
+import LockIcon from "@material-ui/icons/LockOpenRounded";
+import Logout from "views/Auth/Logout";
 
 const dashboardRoutes = [
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    rtlName: "لوحة القيادة",
-    icon: Dashboard,
-    component: DashboardPage,
-    layout: "/admin"
-  },
-  // {
-  //   path: "/user",
-  //   name: "User Profile",
-  //   rtlName: "ملف تعريفي للمستخدم",
-  //   icon: Person,
-  //   component: UserProfile,
-  //   layout: "/admin"
-  // },
-  {
-    path: "/table",
-    name: "Stock",
-    rtlName: "قائمة الجدول",
-    icon: "content_paste",
-    component: TableList,
-    layout: "/admin"
-  },
-  // {
-  //   path: "/typography",
-  //   name: "Typography",
-  //   rtlName: "طباعة",
-  //   icon: LibraryBooks,
-  //   component: Typography,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/icons",
-  //   name: "Icons",
-  //   rtlName: "الرموز",
-  //   icon: BubbleChart,
-  //   component: Icons,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/maps",
-  //   name: "Maps",
-  //   rtlName: "خرائط",
-  //   icon: LocationOn,
-  //   component: Maps,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/notifications",
-  //   name: "Notifications",
-  //   rtlName: "إخطارات",
-  //   icon: Notifications,
-  //   component: NotificationsPage,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/upgrade-to-pro",
-  //   name: "Upgrade To PRO",
-  //   rtlName: "التطور للاحترافية",
-  //   icon: Unarchive,
-  //   component: UpgradeToPro,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/rtl-page",
-  //   name: "RTL Support",
-  //   rtlName: "پشتیبانی از راست به چپ",
-  //   icon: Language,
-  //   component: RTLPage,
-  //   layout: "/rtl"
-  // }
+    {
+        path: "/dashboard",
+        name: "Dashboard",
+        rtlName: "لوحة القيادة",
+        icon: Dashboard,
+        component: DashboardPage,
+        layout: "/admin"
+    },
+    // {
+    //   path: "/user",
+    //   name: "User Profile",
+    //   rtlName: "ملف تعريفي للمستخدم",
+    //   icon: Person,
+    //   component: UserProfile,
+    //   layout: "/admin"
+    // },
+    {
+        path: "/table",
+        name: "Stock",
+        rtlName: "قائمة الجدول",
+        icon: "content_paste",
+        component: TableList,
+        layout: "/admin"
+    },
+    {
+        path: "/logout",
+        name: "Log out",
+        rtlName: "التطور للاحترافية",
+        icon: LockIcon,
+        component: Logout,
+        layout: "/admin"
+    },
+    // {
+    //   path: "/typography",
+    //   name: "Typography",
+    //   rtlName: "طباعة",
+    //   icon: LibraryBooks,
+    //   component: Typography,
+    //   layout: "/admin"
+    // },
+    // {
+    //   path: "/icons",
+    //   name: "Icons",
+    //   rtlName: "الرموز",
+    //   icon: BubbleChart,
+    //   component: Icons,
+    //   layout: "/admin"
+    // },
+    // {
+    //   path: "/maps",
+    //   name: "Maps",
+    //   rtlName: "خرائط",
+    //   icon: LocationOn,
+    //   component: Maps,
+    //   layout: "/admin"
+    // },
+    // {
+    //   path: "/notifications",
+    //   name: "Notifications",
+    //   rtlName: "إخطارات",
+    //   icon: Notifications,
+    //   component: NotificationsPage,
+    //   layout: "/admin"
+    // },
+    // {
+    //   path: "/upgrade-to-pro",
+    //   name: "Upgrade To PRO",
+    //   rtlName: "التطور للاحترافية",
+    //   icon: Unarchive,
+    //   component: UpgradeToPro,
+    //   layout: "/admin"
+    // },
+    // {
+    //   path: "/rtl-page",
+    //   name: "RTL Support",
+    //   rtlName: "پشتیبانی از راست به چپ",
+    //   icon: Language,
+    //   component: RTLPage,
+    //   layout: "/rtl"
+    // }
 ];
 
 export default dashboardRoutes;

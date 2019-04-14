@@ -27,7 +27,7 @@ const Sidebar = ({ ...props }) => {
       {routes.map((prop, key) => {
         var activePro = " ";
         var listItemClasses;
-        if (prop.path === "/upgrade-to-pro") {
+        if (prop.path === "/logout") {
           activePro = classes.activePro + " ";
           listItemClasses = classNames({
             [" " + classes[color]]: true
