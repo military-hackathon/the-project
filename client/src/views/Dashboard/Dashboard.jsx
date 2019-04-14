@@ -30,23 +30,24 @@ import CardIcon from "components/Card/CardIcon.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 
-import { bugs, website, server } from "variables/general.jsx";
+import {bugs, website, server} from "variables/general.jsx";
 
 import {
-  dailySalesChart,
-  emailsSubscriptionChart,
-  completedTasksChart
+    dailySalesChart,
+    emailsSubscriptionChart,
+    completedTasksChart
 } from "variables/charts.jsx";
 
 import dashboardStyle from "assets/jss/material-dashboard-react/views/dashboardStyle.jsx";
 
 class Dashboard extends React.Component {
-  state = {
-    value: 0
-  };
-  handleChange = (event, value) => {
-    this.setState({ value });
-  };
+
+    state = {
+        value: 0
+    };
+    handleChange = (event, value) => {
+        this.setState({value});
+    };
 
   handleChangeIndex = index => {
     this.setState({ value: index });
@@ -184,7 +185,7 @@ class Dashboard extends React.Component {
 }
 
 Dashboard.propTypes = {
-  classes: PropTypes.object.isRequired
+    classes: PropTypes.object.isRequired
 };
 
 export default withStyles(dashboardStyle)(Dashboard);
