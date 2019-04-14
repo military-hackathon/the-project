@@ -43,6 +43,34 @@ class TableList extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      data: []
+    }
+  }
+
+  componentDidMount() {
+    console.log("Making request to endpoint");
+    fetch('http://localhost:8081/queryAllItems')
+    .then(response => {
+      return response.json();
+    })
+    .then(response => {
+      const items = response.map(item => Object.values(item.Record));
+
+      for (var i = 0; i < items.length; i++) { 
+        var counter = 1;
+        for (var j = i+1; j < items.length; j++) { 
+          if (items[i][0] === items[j][0]) {
+            counter++;
+            items.splice(j,1);
+          }
+        }
+        items[i][4] = counter;
+      }
+      console.log(items);
+      this.setState({data: items});
+    })
+    .catch(err => console.log(err));
   }
   
   render() {
@@ -60,15 +88,8 @@ class TableList extends Component {
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["ID", "Name", "Type", "Quantity", "Status"]}
-              tableData={[
-                ["1928479228","Heckler & Koch G36", "Gun", "100", "Available"],
-                ["1958673923", "Meal, Ready-to-Eat", "Food", "36", "Unavailable"],
-                ["1947563748", "M577 Armored Command Vehicle", "Vehicles", "3", "Unavailable"],
-                ["1950939583", "5.56x45mm NATO Ammunition", "Ammunition", "864", "Available"],
-                ["1940582857", "122mm Haubica 2A18", "Ammunition", "4", "Available"],
-                ["1947538593", "Unimog U5000 All-Wheel Drive Truck", "Vehicles", "14", "Available"]
-              ]}
+              tableHead={["ID", "Name", "Type", "Status", "Quantity"]}
+              tableData={this.state.data}
             />
           </CardBody>
         </Card>
