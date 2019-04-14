@@ -70,6 +70,12 @@ const defaultFont = {
   lineHeight: "1.5em"
 };
 
+const logoFont = {
+  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  fontWeight: "300",
+  lineHeight: "2.0em"
+};
+
 const primaryColor = ["#f44336", "#f44336", "#f44336", "#f44336"];
 const warningColor = ["#ff9800", "#ffa726", "#fb8c00", "#ffa21a"];
 const dangerColor = ["#f44336", "#ef5350", "#e53935", "#f55a4e"];
@@ -271,6 +277,7 @@ export {
   boxShadow,
   card,
   defaultFont,
+  logoFont,
   primaryColor,
   warningColor,
   dangerColor,

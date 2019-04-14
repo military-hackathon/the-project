@@ -28,6 +28,8 @@ function CustomTable({ ...props }) {
                   </TableCell>
                 );
               })}
+              <TableCell className={classes.tableCell} key={null}>
+              </TableCell>
             </TableRow>
           </TableHead>
         ) : null}
@@ -42,6 +44,9 @@ function CustomTable({ ...props }) {
                     </TableCell>
                   );
                 })}
+                <TableCell className={classes.tableCell} key={null}>
+                  request
+                </TableCell>
               </TableRow>
             );
           })}

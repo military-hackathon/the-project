@@ -3,6 +3,7 @@ import {
   transition,
   boxShadow,
   defaultFont,
+  logoFont,
   primaryColor,
   primaryBoxShadow,
   infoColor,
@@ -62,7 +63,7 @@ const sidebarStyle = theme => ({
   },
   logo: {
     position: "relative",
-    padding: "15px 15px",
+    padding: "19px 15px",
     zIndex: "4",
     "&:after": {
       content: '""',
@@ -76,7 +77,7 @@ const sidebarStyle = theme => ({
     }
   },
   logoLink: {
-    ...defaultFont,
+    ...logoFont,
     textTransform: "uppercase",
     padding: "5px 0",
     display: "block",

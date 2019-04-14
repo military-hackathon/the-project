@@ -71,10 +71,10 @@ function TableList(props) {
         <Card plain>
           <CardHeader plain color="primary">
             <h4 className={classes.cardTitleWhite}>
-              Table on Plain Background
+                Stock #2
             </h4>
             <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
+                The items that are absent are marked red
             </p>
           </CardHeader>
           <CardBody>
@@ -82,24 +82,9 @@ function TableList(props) {
               tableHeaderColor="primary"
               tableHead={["ID", "Name", "Country", "City", "Salary"]}
               tableData={[
-                ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-                ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-                ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-                [
-                  "4",
-                  "Philip Chaney",
-                  "$38,735",
-                  "Korea, South",
-                  "Overland Park"
-                ],
-                [
-                  "5",
-                  "Doris Greene",
-                  "$63,542",
-                  "Malawi",
-                  "Feldkirchen in Kärnten"
-                ],
-                ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
+                  ["1928479228","Heckler & Koch G36", "Gun", "30", "Available"],
+                  ["1958673923", "Meal, Ready-to-Eat", "Food", "20", "Unavailable"],
+                  ["1947563748", "M577 Armored Command Vehicle", "Vehicles", "1", "Available"],
               ]}
             />
           </CardBody>
