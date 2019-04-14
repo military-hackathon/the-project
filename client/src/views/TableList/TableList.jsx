@@ -88,7 +88,7 @@ class TableList extends Component {
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["ID", "Name", "Type", "Status", "Quantity"]}
+              tableHead={["ID", "Name", "Status", "Type", "Quantity"]}
               tableData={this.state.data}
             />
           </CardBody>
