@@ -46,7 +46,7 @@ function TableList(props) {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Stock #1</h4>
+            <h4 className={classes.cardTitleWhite}>Base #1</h4>
             <p className={classes.cardCategoryWhite}>
               The items that are absent are marked red
             </p>
@@ -71,7 +71,7 @@ function TableList(props) {
         <Card plain>
           <CardHeader plain color="primary">
             <h4 className={classes.cardTitleWhite}>
-                Stock #2
+                Base #2
             </h4>
             <p className={classes.cardCategoryWhite}>
                 The items that are absent are marked red
